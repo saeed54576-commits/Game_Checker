@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560">
+  <style>
+    .box { fill: #0d1117; stroke: #00d4ff; stroke-width: 2; }
+    .title { fill: #00d4ff; font: bold 16px sans-serif; }
+    .text { fill: #c9d1d9; font: 12px sans-serif; }
+    .arrow { fill: none; stroke: #00d4ff; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7" fill="#00d4ff"/>
+    </marker>
+  </defs>
+  <rect x="40" y="40" width="220" height="140" class="box" rx="12"/>
+  <text x="60" y="65" class="title">Hardware</text>
+  <text x="60" y="90" class="text">+ CPU</text>
+  <text x="60" y="110" class="text">+ GPU</text>
+  <text x="60" y="130" class="text">+ RAM</text>
+  <text x="60" y="150" class="text">+ Storage</text>
+
+  <rect x="320" y="40" width="240" height="100" class="box" rx="12"/>
+  <text x="340" y="65" class="title">Computer</text>
+  <text x="340" y="90" class="text">+ cpu_: CPU</text>
+  <text x="340" y="110" class="text">+ gpu_: GPU</text>
+  <text x="340" y="130" class="text">+ ram_: RAM</text>
+  <text x="340" y="150" class="text">+ storage_: Storage</text>
+
+  <rect x="640" y="40" width="220" height="160" class="box" rx="12"/>
+  <text x="660" y="65" class="title">CompatibilityChecker</text>
+  <text x="660" y="90" class="text">+ check(pc, game)</text>
+  <text x="660" y="110" class="text">returns CompatibilityResult</text>
+
+  <rect x="40" y="220" width="260" height="140" class="box" rx="12"/>
+  <text x="60" y="245" class="title">GameRequirement</text>
+  <text x="60" y="270" class="text">+ name</text>
+  <text x="60" y="290" class="text">+ minimum</text>
+  <text x="60" y="310" class="text">+ recommended</text>
+  <text x="60" y="330" class="text">+ storageSizeGB</text>
+
+  <rect x="340" y="240" width="240" height="110" class="box" rx="12"/>
+  <text x="360" y="265" class="title">CompatibilityResult</text>
+  <text x="360" y="290" class="text">+ level</text>
+  <text x="360" y="310" class="text">+ summary</text>
+  <text x="360" y="330" class="text">+ details</text>
+
+  <path class="arrow" d="M260,110 C300,110 320,110 320,120" />
+  <path class="arrow" d="M560,130 C600,130 620,130 640,130" />
+  <path class="arrow" d="M220,240 C260,240 280,240 320,240" />
+  <path class="arrow" d="M520,310 C560,310 580,310 640,310" />
+</svg>

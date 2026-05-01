@@ -1,0 +1,169 @@
+QMainWindow, QWidget {
+    background-color: #080c10;
+    color: #c9d1d9;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+QGroupBox {
+    background-color: #0d1117;
+    border: 1px solid #1e2d3d;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 16px;
+    padding: 0 6px;
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+QLabel {
+    color: #c9d1d9;
+}
+
+QLabel#titleLabel {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+QLabel#subtitleLabel {
+    color: #4a5568;
+    font-size: 14px;
+}
+
+QComboBox, QSpinBox, QGroupBox, QFrame, QPushButton, QScrollArea {
+    background-color: #0d1117;
+    border: 1px solid #1e2d3d;
+    border-radius: 6px;
+    color: #c9d1d9;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #1e2d3d;
+    selection-background-color: #0f4f74;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+}
+
+QComboBox:focus, QSpinBox:focus, QRadioButton:focus, QPushButton:focus {
+    border: 1px solid #00d4ff;
+}
+
+QRadioButton {
+    color: #c9d1d9;
+}
+
+QPushButton {
+    background-color: #111827;
+    border: 1px solid #1e2d3d;
+    border-radius: 10px;
+    padding: 12px;
+    color: #c9d1d9;
+    font-weight: 600;
+}
+
+QPushButton#checkButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #7f3ff2, stop:1 #00d4ff);
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+QPushButton#checkButton:hover:!disabled {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #8f4ff2, stop:1 #44e8ff);
+}
+
+QPushButton:disabled {
+    opacity: 0.5;
+}
+
+QPushButton[selected="true"] {
+    background-color: #0d2d40;
+    border: 1px solid #00d4ff;
+}
+
+QPushButton#gameButton {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #1e2d3d;
+    border-radius: 10px;
+    text-align: left;
+    padding: 14px;
+}
+
+QScrollArea {
+    border: none;
+}
+
+QProgressBar {
+    border: 1px solid #1e2d3d;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 18px;
+    color: #c9d1d9;
+}
+
+QProgressBar::chunk {
+    border-radius: 8px;
+}
+
+QProgressBar[state="ok"]::chunk { background-color: #00ff88; }
+QProgressBar[state="warn"]::chunk { background-color: #ffc300; }
+QProgressBar[state="error"]::chunk { background-color: #ff3b5c; }
+
+QLabel[state="ok"] { color: #00ff88; }
+QLabel[state="warn"] { color: #ffc300; }
+QLabel[state="error"] { color: #ff3b5c; }
+
+QLabel[level="0"] {
+    background-color: #ff3b5c;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+QLabel[level="1"] {
+    background-color: #ffc300;
+    color: #111111;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+QLabel[level="2"] {
+    background-color: #00ff88;
+    color: #0f172a;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+QFrame#cpuScoreCard, QFrame#gpuScoreCard, QFrame#ramScoreCard {
+    background-color: #0f172a;
+    border: 1px solid #1e2d3d;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+QLabel#cpuScoreTitle, QLabel#gpuScoreTitle, QLabel#ramScoreTitle {
+    color: #4a5568;
+    font-size: 12px;
+}
+
+QLabel#cpuScoreValue, QLabel#gpuScoreValue, QLabel#ramScoreValue {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
